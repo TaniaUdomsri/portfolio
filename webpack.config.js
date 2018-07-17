@@ -1,43 +1,56 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-module.exports = {
-	entry: {
-		app: './src/index.js',
-		print: './src/print.js'
-	},
-	plugins: [
-		new CleanWebpackPlugin(['dist']),
-     	new HtmlWebpackPlugin({
-       		title: 'Output Management'
-    	})
-    ],
-	output: {
-	    filename: '[name].bundle.js',
-	    path: path.resolve(__dirname, 'dist')
-	},
-	module: {
-	  	rules: [{
-	      	test: /\.scss$/,
-			use: [
-				"style-loader", // creates style nodes from JS strings
-				"css-loader", // translates CSS into CommonJS
-				"sass-loader" // compiles Sass to CSS
-			]
-	    },
-	    {
-	        test: /\.css$/,
-	        use: [
-	            'style-loader',
-	            'css-loader'
-	        ]
-	    },
-		{
-		    test: /\.(png|svg|jpg|gif)$/,
-		    use: [
-		      'file-loader'
-		    ]
-		}]
-	}
-};
+module.exports = [
+  {
+    entry: './app.scss',
+    output: {
+      // This is necessary for webpack to compile
+      // But we never use style-bundle.js
+      filename: 'style-bundle.js',
+      path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+      rules: [{
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'bundle.css',
+            },
+          },
+          { loader: 'extract-loader' },
+          { loader: 'css-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['./node_modules'],
+            }
+          },
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      }]
+    },
+  },
+  {
+    entry: "./app.js",
+    output: {
+      filename: "bundle.js",
+      path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+      loaders: [{
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['env']
+        }
+      }]
+    },
+  }
+];
