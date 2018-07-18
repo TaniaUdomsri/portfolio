@@ -7,11 +7,18 @@ $mdc-theme-on-surface: #442C2E;
 $mdc-theme-background: #FFFFFF;
 $mdc-theme-on-background: #442C2E;
 
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/card/mdc-card";
+@import "@material/image-list/mdc-image-list";
+@import "@material/typography/mdc-typography";
+@import "@material/layout-grid/mdc-layout-grid";
+
+
 @import "@material/button/mdc-button";
 @import "@material/textfield/mdc-text-field";
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
-@import "@material/image-list/mdc-image-list";
 @import "@material/elevation/mdc-elevation";
 
 html, body {
@@ -24,40 +31,25 @@ body {
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
 }
 
-// Login page styles
-
-.header {
-  text-align: center;
+.intro {
+  margin-top: 100px;
 }
 
-.shrine-logo {
-  width: 150px;
-  height: 150px;
-  padding-top: 80px;
-  fill: currentColor;
+.my-portfolio-list {
+  @include mdc-image-list-standard-columns(3);
 }
 
-.username,
-.password {
-  display: block;
-  width: 300px;
-  margin: 20px auto;
+.portfolio-card__content {
+  padding: 0 16px;
+
+  div {
+    height: 40px;
+  }
+}
+.portfolio1-card__media {
+  background-image: url("./assets/cerise-scallop.jpg");
 }
 
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 300px;
-  margin: auto;
-}
-
-.button-container button {
-  margin: 3px;
-}
-.shrine-login {
-  background-color: $mdc-theme-background;
-  color: $mdc-theme-on-background;
-}
 
 // Home page styles
 
