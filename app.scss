@@ -1,14 +1,27 @@
-$mdc-theme-primary: #FEDBD0;
+$mdc-theme-primary: #FFFFFF;    /* header bg */
+$mdc-theme-on-primary: #424242; /* text on header bg */
+$mdc-theme-secondary: #b0bec5;
+$mdc-theme-on-secondary: #424242;
+$mdc-theme-surface: #FFFFFF;
+$mdc-theme-on-surface: #424242;
+$mdc-theme-background: #424242;
+$mdc-theme-on-background: #424242;
+
+$button-fill-color: #607d8b;
+
+
+/*$mdc-theme-primary: #FEDBD0;    
 $mdc-theme-on-primary: #442C2E;
 $mdc-theme-secondary: #FEEAE6;
 $mdc-theme-on-secondary: #442C2E;
 $mdc-theme-surface: #FFFBFA;
 $mdc-theme-on-surface: #442C2E;
 $mdc-theme-background: #FFFFFF;
-$mdc-theme-on-background: #442C2E;
+$mdc-theme-on-background: #442C2E;*/
 
 
 @import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/elevation/mdc-elevation";
 @import "@material/card/mdc-card";
 @import "@material/image-list/mdc-image-list";
 @import "@material/typography/mdc-typography";
@@ -19,7 +32,7 @@ $mdc-theme-on-background: #442C2E;
 @import "@material/textfield/mdc-text-field";
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
-@import "@material/elevation/mdc-elevation";
+
 
 html, body {
   height: 100%;
@@ -28,15 +41,26 @@ html, body {
 body {
   font-family: 'Roboto';
   margin: 0;
-  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+  padding-top: 0.1px; /* Prevent header h1 margin from pushing body down*/
+  color: $mdc-theme-on-primary;
 }
 
 .intro {
-  margin-top: 100px;
+  margin: 100px 0.5% 0.5% 0.5%;
 }
 
 .my-portfolio-list {
   @include mdc-image-list-standard-columns(3);
+
+  .mdc-card {
+    margin:1%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .my-portfolio-list {
+    @include mdc-image-list-standard-columns(2);
+  }
 }
 
 .portfolio-card__content {
@@ -48,6 +72,10 @@ body {
 }
 .portfolio1-card__media {
   background-image: url("./assets/cerise-scallop.jpg");
+}
+
+.mdc-button {
+  @include mdc-button-container-fill-color($button-fill-color)
 }
 
 
