@@ -2982,15 +2982,6 @@ var _textfield = __webpack_require__(23);
 
 var _index = __webpack_require__(37);
 
-var username = new _textfield.MDCTextField(document.querySelector('.username'));
-var password = new _textfield.MDCTextField(document.querySelector('.password'));
-
-new _ripple.MDCRipple(document.querySelector('.cancel'));
-new _ripple.MDCRipple(document.querySelector('.next'));
-
-// const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-// const topAppBar = new MDCTopAppBar(topAppBarElement);
-
 var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
 var dots = document.querySelector('.dots');
 var panels = document.querySelector('.panels');

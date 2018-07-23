@@ -18,6 +18,7 @@ $violet: #7c2d82;
 $yellow: #fcb64e;
 $grey: #787778;
 $orange: #f7911e;
+$light-green: #e8f5e9;
 
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/elevation/mdc-elevation";
@@ -138,10 +139,42 @@ img {
   background-image: url("./assets/images/babel-fish.png");
 }
 
-
 .mdc-button {
   @include mdc-button-container-fill-color($button-fill-color)
 }
+#about-me {
+  padding-top: 180px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  position: relative;
+  background: $light-green;
+
+  .my-image {
+    clip-path: circle(160px at center);
+    position: relative;
+    top:-45px;
+  }
+}
+@media (max-width: 960px) {
+  #about-me {
+    .my-image {
+      clip-path: circle(120px at center);
+      top:0px;
+    }
+  }
+}
+@media (max-width: 840px) {
+  #about-me {
+    padding-top: 50px;
+
+    .my-image {
+      left:-50px;
+      top: auto;
+      bottom: -50px;
+    }
+  }
+}
+
 
 /* Portfolio details */
 .port-section {
