@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122650099-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122650099-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tania | Babel Fish</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="bundle.css">
+
+  <link rel="stylesheet" href="./assets/jquery/jquery-ui.min.css">
+  <script src="./assets/jquery/jquery-3.3.1.min.js"></script>
+  <script src="./assets/jquery/jquery-ui.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</head>
+
+<body class="mdc-typography">
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z2">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon mdc-typography--headline5">TU</a>
+      </section>
+      <section class="top-bar-menu mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <a href="index.html#portfolio" class="top-menu-item" menu="portfolio" aria-label="portfolio" alt="portfolio">Portfolio</a>
+        <a href="index.html#about-me" class="top-menu-item" menu="about-me" aria-label="about" alt="about">About</a>
+      </section>
+    </div>
+  </header>
+
+  <section class="port-section port-intro port-babel port-orange-bg">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+          <div class="port-intro-image">
+            <img src="./assets/images/babel-fish.png" alt="Babel fish" />
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+           <h1 class="mdc-typography--headline2">Babel Fish</h1>
+           <h5 class="mdc-typography--headline5">UX helper tool, Axure plugin, Chrome extension, and Greasemonkey script</h5>
+           <p class="mdc-typography--body1">Today, <strong>globalization</strong> is necessary. Amazon Seller Central website has sellers from all over the world so we need to make sure that our sellers should be comfortable using our website in their languages. Babel fish is a UX helper tool that helps us to identify <strong>internationalization and localizability issues</strong> in early so we can speed up development lifecycle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-role">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+          <h3 class="mdc-typography--headline3">My responsibilities</h3>
+          <p class="mdc-typography--body1">Project lead, UX design, and Front-end engineer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-challenges port-orange-bg">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <h3 class="mdc-typography--headline3">Challenge</h3>
+          <ul class="mdc-typography--body1">
+            <li><li-head>Mockups are not scalable</li-head>
+            Usually, UX designers create and deliver UI mockups in the English language. Many times these mockups are not scalable with other languages. For example, the long German text is not fitting in that small box, or the short Chinese strings look strange in that large panel. It required time and efforts going back and forth with the UX and development teams.</li>
+           <li><img src="./assets/images/babel-fish/babel-1.png" alt="Localization problem" />
+            </li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-solutions">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <h3 class="mdc-typography--headline3">Solutions</h3>
+          <ul class="mdc-typography--body1">
+            <li>
+              <li-head>Scalable UI mockups and speed up development cycle</li-head>
+              <p>We should be able to create scalable UI mockups for other languages before handing off to the development team.  The development cycle would be speeded up by Identifying these issues early.</p>
+              <p>How could we identify UI design issues before handing off to developer team? What if we could translate our mockups into other languages?</p>
+            </li>
+            <li>
+              <li-head>Find a right translation method</li-head>
+              I did a lot of research on different translation methods we could use and found that: <br />
+              <ul>
+                <li>Machine translation costs a certain amount of money</li>
+                <li>Human translation also costs time and money</li>
+                <li>Security issues using 3rd party API to translate Amazon content</li>
+              </ul>
+              And the I realized that we don’t need to do a real translation since pseudo-localization can do:
+              <ul>
+                <li>Fake translation to non ASCII readable English characters</li>
+                <li>Chinese and Japanese characters are appended and prepended</li>
+                <li>Increase the string size by 30%</li>
+                <li>Not require actual language skill</li>
+                <li>See how the UI handles longer strings</li>
+                <li>Identify vertical / line-height truncations - caused by Asian and Latin characters</li>
+              </ul>
+            </li>
+            <li style="text-align: center;">
+              <img src="./assets/images/babel-fish/babel-2.png" alt="Babel" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-outcomes port-orange-bg">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <h3 class="mdc-typography--headline3">Outcomes and achievements</h3>
+          <p class="mdc-typography--body1">UX Designers have been actively using these Axure custom library and Chrome extension. I received great feedback from upper management, UX designers, PMs, and engineers from across the seller organizations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-final">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <h3 class="mdc-typography--headline3">Final implementation</h3>
+          <ul class="mdc-typography--body1">
+            <li>For UX designers to use pseudo-localization method in mockups, I created:
+              <ul>
+                <li>Axure custom library - for UX designers who use Axure</li>
+                <li>Chrome extension and Greasemonkey script for UX designers who export their mockup to HTML</li>
+              </ul>
+            </li>
+            <li>Axure custom library and Chrome extension tool are coded using JavaScript and pseudo-localization method.</li>
+            <li>Due to the confidential nature of this project, examples will be provided upon request.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-outcomes port-orange-bg">
+    <div class="mdc-layout-grid page-wrapper">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10">
+          <h3 class="mdc-typography--headline3">Next steps</h3>
+          <p align="center" class="mdc-typography--body1">I’m planning to have this tool to be available on other design tools such as Sketch and Flinto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="port-section port-orange-bg"></section>
+
+  <footer class="mdc-typography--body2 margin-top-0">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/tania-udomsri-13689640/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/TaniaUdomsri" target="_blank"><i class="fab fa-github-square"></i></a></li>
+      <li><a href="mailto:usaranya@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+    </ul>
+    <p>&copy;2018 BY TANIA UDOMSRI AND ITS RESPECTIVE OWNERS</p>
+  </footer>
+
+  
+
+  
+
+  <script src="bundle.js" async></script>
+</body>
+</html>

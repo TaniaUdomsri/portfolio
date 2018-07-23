@@ -13,137 +13,84 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tania Udomsri</title>
-  <link rel="shortcut icon" href="https://material.io/favicon.ico">
+  <title>Tania | Homepage</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="bundle.css">
+
+  <link rel="stylesheet" href="./assets/jquery/jquery-ui.min.css">
+  <script src="./assets/jquery/jquery-3.3.1.min.js"></script>
+  <script src="./assets/jquery/jquery-ui.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
 </head>
+
 <body class="mdc-typography">
   <header class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z2">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">TU</a>
+        <a href="index.html" class="material-icons mdc-top-app-bar__navigation-icon mdc-typography--headline5">TU</a>
       </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <a href="#" class="mdc-top-app-bar__action-item" aria-label="portfolio" alt="portfolio">Portfolio</a>
-        <a href="#" class="mdc-top-app-bar__action-item" aria-label="about" alt="about">About</a>
+      <section class="top-bar-menu mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <a class="top-menu-item" menu="portfolio" aria-label="portfolio" alt="portfolio">Portfolio</a>
+        <a class="top-menu-item" menu="about-me" aria-label="about" alt="about">About</a>
       </section>
     </div>
   </header>
 
-  <div class="mdc-layout-grid">
+  <div class="mdc-layout-grid page-wrapper">
     <div class="mdc-layout-grid__inner">
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9">
         <section class="intro">
           <h1 class="mdc-typography--headline2">Hi, I’m Tania Udomsri</h1> 
-          <h2 class="mdc-typography--headline5">I'm a senior Design Technologist who loves bridging the gap between design and development world.</h2>
+          <h2 class="mdc-typography--headline5">I'm an enthusiastic senior Design Technologist who loves bridging the gap between design and development world.</h2>
         </section>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 intro-icon">
+        <div class="intro-icon-inner">
+          <i class="fas fa-code"></i>
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <section class="main-content">
+  <div class="mdc-layout-grid page-wrapper">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <section id="portfolio" class="main-content">
           <ul class="mdc-image-list my-portfolio-list">
             <li class="mdc-image-list__item">
-              <div class="mdc-card">
+              <div class="portfolio-card mdc-card" portfolio="HMD2">
                 <div class="portfolio1-card__media mdc-card__media mdc-card__media--16-9">
                   <div class="mdc-card__media-content"></div>
-                </div>
-                <div class="portfolio-card__content">
-                  <h2 class="mdc-typography--headline6">How's my driving? 2.0</h2>
-                  <h3 class="mdc-typography--subtitle2">Design pattern, web component</h3>
-                  <div class="mdc-typography--body2">
-                  Role: Project lead, UX design, Front-end development
-                </div>
-                </div>
-
-                <div class="mdc-card__actions">
-                  <div class="mdc-card__action-buttons">
-                    <button portfolio="HMD" class="portfolio-card-button mdc-button mdc-button--dense mdc-button--outlined mdc-ripple-upgraded">Read more</button>
-                  </div>
                 </div>
               </div>
             </li>
 
             <li class="mdc-image-list__item">
-              <div class="mdc-card">
-                <div class="portfolio1-card__media mdc-card__media mdc-card__media--16-9">
+              <div class="portfolio-card mdc-card" portfolio="seller-command-center">
+                <div class="portfolio2-card__media mdc-card__media mdc-card__media--16-9">
                   <div class="mdc-card__media-content"></div>
-                </div>
-                <div class="portfolio-card__content">
-                  <h2 class="mdc-typography--headline6">Seller Command Center</h2>
-                  <h3 class="mdc-typography--subtitle2">Data visualization tool</h3>
-                  <div class="mdc-typography--body2">
-                  Role: Project lead, Front-end development
-                </div>
-                </div>
-
-                <div class="mdc-card__actions">
-                  <div class="mdc-card__action-buttons">
-                    <button portfolio="SCC" class="portfolio-card-button mdc-button mdc-button--dense mdc-button--outlined mdc-ripple-upgraded">Read more</button>
-                  </div>
                 </div>
               </div>
             </li>
 
             <li class="mdc-image-list__item">
-              <div class="mdc-card">
-                <div class="portfolio1-card__media mdc-card__media mdc-card__media--16-9">
+              <div class="portfolio-card mdc-card" portfolio="product-tour">
+                <div class="portfolio3-card__media mdc-card__media mdc-card__media--16-9">
                   <div class="mdc-card__media-content"></div>
-                </div>
-                <div class="portfolio-card__content">
-                  <h2 class="mdc-typography--headline6">UX helper tools</h2>
-                  <h3 class="mdc-typography--subtitle2">Browsers extension</h3>
-                  <div class="mdc-typography--body2">
-                  Role: Project lead, UX/UI design, Front-end development
-                </div>
-                </div>
-
-                <div class="mdc-card__actions">
-                  <div class="mdc-card__action-buttons">
-                    <button portfolio="UX-tool" class="portfolio-card-button mdc-button mdc-button--dense mdc-button--outlined mdc-ripple-upgraded">Read more</button>
-                  </div>
                 </div>
               </div>
             </li>
 
             <li class="mdc-image-list__item">
-              <div class="mdc-card">
-                <div class="portfolio1-card__media mdc-card__media mdc-card__media--16-9">
+              <div class="portfolio-card mdc-card" portfolio="babel-fish">
+                <div class="portfolio4-card__media mdc-card__media mdc-card__media--16-9">
                   <div class="mdc-card__media-content"></div>
-                </div>
-                <div class="portfolio-card__content">
-                  <h2 class="mdc-typography--headline6">Table filters</h2>
-                  <h3 class="mdc-typography--subtitle2">Design pattern</h3>
-                  <div class="mdc-typography--body2">
-                  Role: Prototyper
-                </div>
-                </div>
-
-                <div class="mdc-card__actions">
-                  <div class="mdc-card__action-buttons">
-                    <button portfolio="table-filters" class="portfolio-card-button mdc-button mdc-button--dense mdc-button--outlined mdc-ripple-upgraded">Read more</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="mdc-image-list__item">
-              <div class="mdc-card">
-                <div class="portfolio1-card__media mdc-card__media mdc-card__media--16-9">
-                  <div class="mdc-card__media-content"></div>
-                </div>
-                <div class="portfolio-card__content">
-                  <h2 class="mdc-typography--headline6">Product tour</h2>
-                  <h3 class="mdc-typography--subtitle2">Design pattern, web component</h3>
-                  <div class="mdc-typography--body2">
-                  Role: Project lead, UX design, Front-end development
-                </div>
-                </div>
-
-                <div class="mdc-card__actions">
-                  <div class="mdc-card__action-buttons">
-                    <button portfolio="product-tour" class="portfolio-card-button mdc-button mdc-button--dense mdc-button--outlined mdc-ripple-upgraded">Read more</button>
-                  </div>
                 </div>
               </div>
             </li>
@@ -152,11 +99,24 @@
         </section>
 
 
+        <section id="about-me" class="main-content">
+
+        </section>
+
+
 
       </div>
     </div>
   </div>
 
+  <footer class="mdc-typography--body2">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/tania-udomsri-13689640/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/TaniaUdomsri" target="_blank"><i class="fab fa-github-square"></i></a></li>
+      <li><a href="mailto:usaranya@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+    </ul>
+    <p>&copy;2018 BY TANIA UDOMSRI AND ITS RESPECTIVE OWNERS</p>
+  </footer>
         
   
 

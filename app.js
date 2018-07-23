@@ -2,16 +2,6 @@ import {MDCRipple} from '@material/ripple';
 import {MDCTextField} from '@material/textfield';
 import {MDCTopAppBar} from '@material/top-app-bar/index';
 
-const username = new MDCTextField(document.querySelector('.username'));
-const password = new MDCTextField(document.querySelector('.password'));
-
-new MDCRipple(document.querySelector('.cancel'));
-new MDCRipple(document.querySelector('.next'));
-
-
-// const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-// const topAppBar = new MDCTopAppBar(topAppBarElement);
-
 var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
 var dots = document.querySelector('.dots');
 var panels = document.querySelector('.panels');
