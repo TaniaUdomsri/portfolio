@@ -3,7 +3,7 @@ $(function() {
   // Top nav menu
   $(".top-menu-item").click(function() {
   	var menu = $(this).attr('menu');
-  	$.scrollTo('#' + menu, 500, {offset: {top:-70, left:0} });
+  	$.scrollTo('#' + menu, 500, {offset: {top:0, left:0} });
   })
 
   // Portfolio cards

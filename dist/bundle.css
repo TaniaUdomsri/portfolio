@@ -3077,6 +3077,9 @@ img {
     left: 0;
     top: -250px; } }
 
+#portfolio {
+  padding: 70px 0; }
+
 .my-portfolio-list .mdc-image-list__item {
   width: calc(100% / 2 - 4.5px);
   margin: 2px; }
@@ -3108,8 +3111,8 @@ img {
   background-color: #607d8b; }
 
 #about-me {
-  padding-top: 180px;
-  padding-bottom: 50px;
+  padding-top: 220px;
+  padding-bottom: 120px;
   margin-top: 100px;
   position: relative;
   background: #e8f5e9; }

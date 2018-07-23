@@ -109,7 +109,9 @@ img {
     }
   }
 }
-
+#portfolio {
+  padding: 70px 0;
+}
 .my-portfolio-list {
   @include mdc-image-list-standard-columns(2);
 
@@ -143,8 +145,8 @@ img {
   @include mdc-button-container-fill-color($button-fill-color)
 }
 #about-me {
-  padding-top: 180px;
-  padding-bottom: 50px;
+  padding-top: 220px;
+  padding-bottom: 120px;
   margin-top: 100px;
   position: relative;
   background: $light-green;
