@@ -111,6 +111,7 @@ img {
 }
 #portfolio {
   padding: 70px 0;
+  min-height: 750px;
 }
 .my-portfolio-list {
   @include mdc-image-list-standard-columns(2);
