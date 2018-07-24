@@ -3088,25 +3088,13 @@ img {
 .my-portfolio-list .mdc-card {
   margin: 1%; }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .my-portfolio-list .mdc-image-list__item {
     width: calc(100% / 1 - 5px);
     margin: 2px; } }
 
 .portfolio-card {
   cursor: pointer; }
-
-.portfolio1-card__media {
-  background-image: url(d078f1bada6131561bc01f2496c5ac19.png); }
-
-.portfolio2-card__media {
-  background-image: url(e460f4793a3768163c31fcc9b84d2d08.png); }
-
-.portfolio3-card__media {
-  background-image: url(a63e9dfdb74be3fdf0dd54e17ad0ba3e.png); }
-
-.portfolio4-card__media {
-  background-image: url(7cf40d2502eab6667c11deb6713f8721.png); }
 
 .mdc-button:not(:disabled) {
   background-color: #607d8b; }
@@ -3119,6 +3107,7 @@ img {
   background: #e8f5e9; }
   #about-me .my-image {
     clip-path: circle(160px at center);
+    -webkit-clip-path: circle(160px at center);
     position: relative;
     top: -45px; }
 
@@ -3211,63 +3200,64 @@ footer {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default; }
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0; }
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in; }
-
-.hovereffect:hover img {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-  filter: grayscale(1) blur(3px);
-  -webkit-filter: grayscale(1) blur(3px);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2); }
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6); }
-
-.hovereffect a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  border: 1px solid #fff;
-  margin: 50px 0 0 0;
-  background-color: transparent; }
-
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff; }
-
-.hovereffect a.info, .hovereffect h2 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  color: #fff;
-  text-transform: uppercase; }
-
-.hovereffect:hover a.info, .hovereffect:hover h2 {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
+  cursor: pointer; }
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #FFFFFF; }
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear; }
+  .hovereffect h5 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    /*background:rgba(0,0,0,0.6);*/
+    -webkit-transform: translatey(-10px);
+    -ms-transform: translatey(-10px);
+    transform: translatey(-10px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+    padding: 0 30px;
+    margin: 12% 0 0 0; }
+  .hovereffect p {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 8% 0 0 0;
+    padding: 0 20px;
+    line-height: 2rem; }
+  .hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .hovereffect:hover h5, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: translatey(0);
+    -webkit-transform: translatey(0);
+    transform: translatey(0); }
+  .hovereffect:hover p {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s; }
