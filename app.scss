@@ -28,12 +28,6 @@ $light-green: #e8f5e9;
 @import "@material/layout-grid/mdc-layout-grid";
 
 
-@import "@material/button/mdc-button";
-@import "@material/textfield/mdc-text-field";
-@import "@material/drawer/mdc-drawer";
-@import "@material/list/mdc-list";
-
-
 html, body {
   height: 100%;
 }
@@ -130,9 +124,6 @@ img {
   cursor: pointer;
 }
 
-.mdc-button {
-  @include mdc-button-container-fill-color($button-fill-color)
-}
 #about-me {
   padding-top: 220px;
   padding-bottom: 120px;
@@ -202,18 +193,18 @@ img {
 
   &.port-blue-bg {
     background: $blue;
-    color: $mdc-theme-surface
+    color: $mdc-theme-surface;
   }
   &.port-pastel-green-bg {
     background: $pastel-green;
   }
   &.port-grey-bg {
     background: $grey;
-    color: $mdc-theme-surface
+    color: $mdc-theme-surface;
   }
   &.port-orange-bg {
     background: $orange;
-    color: $mdc-theme-surface
+    color: $mdc-theme-surface;
   }
 
   &.port-intro {
