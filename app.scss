@@ -122,6 +122,7 @@ img {
 }
 .portfolio-card {
   cursor: pointer;
+  @include mdc-elevation(2);
 }
 
 #about-me {
